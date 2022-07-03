@@ -1,6 +1,7 @@
 body{
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 600px ;
 }
 
 ul{
@@ -77,6 +78,7 @@ img{
 .introducao-bg{
     background: #000000;
     color: #ffffff;
+    box-shadow: inset 0 -120px white;
 }
 
 .introducao{
@@ -93,8 +95,16 @@ img{
 
 .introducao-conteudo{
     align-self: center;
-    padding-bottom: 80px;
+    padding-bottom: 200px;
 }
+
+
+.introducao img {
+    height: 100%;
+    object-fit: cover;
+    border-radius: 4px;
+}
+
 
 
 .introducao h1{
@@ -136,6 +146,16 @@ img{
 
 
 
+/*AJUTES NO RESPONSIVO DO SITE.*/
+
+@media(max-width:600px){
+    .introducao{
+        padding: 12px 16px ;
+        font-size: 16px;
+
+    }    
+}
+
 
 @media (max-width:800px) {
     header-menu{
@@ -160,6 +180,7 @@ img{
 }
 
 
+
 @media (max-width:600px){
     .header-menu{
         gap:12px
@@ -169,5 +190,39 @@ img{
         padding-bottom: 8px;
         font-size: 14px;
 
+    }
+
+    .introducao  p {
+        font-size: 18px;
+    }
+}
+
+
+@media (max-widht: 800px){
+    .introducao-bg{
+        background: #000000;
+        padding-top: 40px;
+        box-shadow: inset 0 - 60px #ffffff;
+    }
+
+    .introducao{
+        grid-template-columns: 1fr;
+        gap: 32px
+    }
+
+    .introducao-conteudo{
+        padding-bottom: 0px;
+    }
+
+
+
+    .introducao{
+        font-size: 32px;
+        margin-bottom: 16px;
+    }
+
+    .introducao img{
+        height: 300px;
+        width: 100%;
     }
 }
